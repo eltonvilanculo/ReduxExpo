@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from "react-native";
 import appReducer from "./src/reducers";
 import { Provider, useSelector } from "react-redux";
 import MainPage from "./src/pages/MainPage";
+import CallBackPage from "./src/pages/CallBackPage";
 
 export default function App() {
   const store = configureStore({
@@ -12,7 +13,7 @@ export default function App() {
 
   return (
     <Provider store={store}>
-      <MainPage />
+      <CallBackPage />
     </Provider>
   );
 }

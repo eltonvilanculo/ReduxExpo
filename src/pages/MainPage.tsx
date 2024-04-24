@@ -7,7 +7,6 @@ export default function MainPage() {
     (state: { counterReducer: string; loggedReducer: boolean }) => state
   );
 
-  console.log(counterReducer);
   const dispatch = useDispatch();
   const title = loggedReducer ? "Sair" : "Entrar";
   return (
